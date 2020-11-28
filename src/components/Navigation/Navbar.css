@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500;1,600&display=swap');
+
+html, body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#navbar {
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav {
+    background: white;
+    align-items: center;
+    height: 0rem;
+    min-height: 3.5rem;
+    overflow: hidden;
+    margin: 0 2rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav.open {
+    min-height: 51vh;
+    margin-bottom: 3rem;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    padding: 1.7rem 0;
+    font-size: 1.4rem;
+}
+
+.collapse {
+    height: 20rem;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.1rem 1rem;
+    font-size: 1.2rem;
+    font-family: Poppins, sans-serif;
+    position: relative;
+}
+
+.nav .nav-items .nav-link:nth-last-child(1) {
+    border-bottom: 1px solid black;
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1.1rem 0;
+    display: block;
+    color: black;
+    z-index: 100;
+}
+
+.nav .manageuser {
+    padding: 1.6rem 0;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .nav .nav-menu, .nav .nav-items {
+        flex-direction: column;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}

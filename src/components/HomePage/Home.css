@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500;1,600&display=swap');
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    height: 93vh;
+    /* position: relative; */
+    overflow: none;
+    z-index: 1;
+}
+
+/* #mainContainer {
+    display: flex;
+    flex-direction: row;
+} */
+
+#introContainer {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    /* flex-direction: row; */
+    height: 100%;
+    justify-content: center;
+    /* background-color: black; */
+    clear: right;
+	width: 50%;
+	margin-left: 0 auto;
+	float: left;
+}
+
+#imgContainer {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    position: relative;
+    /* flex-direction: row; */
+    height: 100%;
+    width: 50%;
+	margin: 0 auto;
+	float: right;
+}
+
+#deliveryHeader {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+/* .container {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+#message {
+    margin-bottom: 50px;
+    user-select: none;
+}
+
+#message h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-style: medium;
+    /* background-color: aqua; */
+}
+
+#search {
+    display: flex;
+}
+
+#inputContainer {
+    width: 77%;
+    height: 4rem;
+    /* background-color: gray; */
+    border-radius: 0.25em;
+    box-shadow: 0 3px 6px rgba(233, 233, 233)
+}
+
+#buttonContainer {
+    height: 4rem;
+    width: 23%;
+}
+
+.searchContainer {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* overflow: none; */
+    /* background-color: black; */
+    /* flex: 0 0 90%; */
+}
+#input {
+    width: 100%;
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* background-color: indianred; */
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.align {
+    align-content: center;
+
+}
+.buttonCon {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+    border-radius: 0.25em;
+    color: white;
+    padding: 0 8px;
+}
+.buttonCon:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.sbm {
+    width: 16px;
+    height: 1px;
+}
+input {
+    width: 100%;
+    border: none;
+    outline-width: 0;
+
+}
+.inputLabel {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.inputPadding {
+    line-height: 1em;
+    font-size: 16px;
+    border: medium none;
+    display: inline-block;
+    z-index: auto;
+    position: relative;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    width: 100%;
+}
+.title {
+    text-align: left;
+    line-height: normal;
+    position: absolute;
+    box-sizing: content-box;
+    display: block;
+    float: none;
+    left: 15%;
+    top: 10%;
+    transform: translate(-25%, -10%);
+}
+
+#imgContainer {
+    margin: 0 auto;
+    /* display: inline-block; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+img {
+    height: 45vw;
+    width: 48vw;
+    /* transform: rotate(-5deg); */
+    border-radius: 0.25em; 
+}
+
+p {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #introContainer {
+        width: 100vw;
+        float: none;
+        height: 50%;
+    }
+
+    #message h1 {
+        font-size: 3.5em;
+        flex: 0 2 300px;
+    }
+
+    #deliveryHeader {
+        width: 80vw;
+        float: none;
+    }
+
+    #imgContainer {
+        width: 100vw;
+        height: 75%;
+        /* position: relative; */
+        float: none;
+    }
+
+    img {
+        height: 70vh;
+        width: 90vw;
+    }
+
+}
